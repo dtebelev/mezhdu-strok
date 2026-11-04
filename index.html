@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Личный архив переписки Дэна и Натальи. История, проекты, идеи и ссылки — в одном месте.">
+  <title>Между строк — архив Дэна и Натальи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Навигация">
+      <div class="brand" role="button" tabindex="0" data-view="home" aria-label="На главную">
+        <span class="brand-mark"><span class="brand-initial">М</span><span class="brand-dot"></span></span>
+        <span class="brand-label"><strong>Между строк</strong><small>Цифровой архив</small></span>
+      </div>
+      <div class="side-section-title">ИССЛЕДОВАТЬ</div>
+      <nav class="side-nav" aria-label="Разделы">
+        <button class="nav-item is-active" data-view="home"><span class="nav-ico">⌂</span><span>Обзор</span></button>
+        <button class="nav-item" data-view="archive"><span class="nav-ico">☰</span><span>Вся переписка</span><span class="nav-count" id="navTotal">595</span></button>
+        <button class="nav-item" data-view="topics"><span class="nav-ico">◈</span><span>Темы и проекты</span></button>
+        <button class="nav-item" data-view="links"><span class="nav-ico">↗</span><span>Библиотека ссылок</span></button>
+        <button class="nav-item" data-view="media"><span class="nav-ico">▧</span><span>Фото и файлы</span></button>
+        <button class="nav-item" data-view="favorites"><span class="nav-ico">♡</span><span>Избранное</span><span class="nav-count" id="favoritesCount">0</span></button>
+      </nav>
+      <div class="side-section-title side-section-spaced">БЫСТРЫЙ ДОСТУП</div>
+      <div class="sidebar-shortcuts" id="sidebarTopics"></div>
+      <div class="side-footer">
+        <div class="privacy-note"><span class="privacy-indicator"></span><div><strong>Личный архив</strong><p>Секреты и email скрыты. Храните сайт приватно.</p></div></div>
+        <div class="side-footer-bottom"><span>Telegram · 2026</span><button id="themeButton" class="theme-button" title="Сменить тему" aria-label="Сменить тему">◐</button></div>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left"><button class="mobile-menu" id="menuButton" aria-label="Открыть меню">☰</button><span class="breadcrumb">АРХИВ / <strong id="breadcrumbPage">ОБЗОР</strong></span></div>
+        <div class="topbar-actions"><button class="top-search" id="globalSearchButton" aria-label="Начать поиск"><span class="top-search-icon">⌕</span><span class="search-label">Найти в архиве</span><kbd>/</kbd></button><div class="top-avatar" title="Дэн и Наталья">ДН</div></div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="site-footer"><span>Сохранено с уважением к истории.</span><span>Неофициальный архив экспорта Telegram · Без серверов и аналитики</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="archive-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
